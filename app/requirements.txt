@@ -1,0 +1,8 @@
+Flask==0.10.1
+mysql-python
+flask-mysql
+flask_sqlalchemy
+mysql-connector-python-rf
+flask_cors
+flask_restful
+configparser
