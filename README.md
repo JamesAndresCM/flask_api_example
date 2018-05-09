@@ -24,7 +24,7 @@ Or use Docker
 
 - Create container flask_api
 * `docker run -d --log-driver=json-file --log-opt max-file=3 --log-opt max-size=50m --name=api_flask_persona 
---link=api_bd:db --publish=5000:5000 flask_api`
+--link=db:db --publish=5000:5000 flask_api`
 
 ## Endpoints
 
