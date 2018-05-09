@@ -1,7 +1,7 @@
 import os
-import ConfigParser
+from ConfigParser import SafeConfigParser
+config = SafeConfigParser(os.environ)
 
-config = ConfigParser.ConfigParser()  
 config.read('db_conf.conf')
 
 class developmentConfig(object):
