@@ -2,7 +2,7 @@
 
 Set user and password host to bd (mysql)
 
-- file `app/db_conf.conf (username, password, host)`
+- file `.env (username, password, host,db)`
 
 Install requirements
 
@@ -24,7 +24,8 @@ Or use Docker
 
 - Create container flask_api
 * `docker run -d --log-driver=json-file --log-opt max-file=3 --log-opt max-size=50m --name=api_flask_persona 
---link=db:db --publish=5000:5000 flask_api`
+--link=db:db --publish=5000:5000 -e HOST_DB=db -e DATABASE_DB=persona_example -e USER_DB=user_api 
+-e PASSWD_USER_DB=api_test flask_api`
 
 ## Endpoints
 
