@@ -1,4 +1,4 @@
-# Todo flask_api_example
+# Flask_api_example
 
 Set user and password host to bd (mysql)
 
