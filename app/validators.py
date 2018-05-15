@@ -9,11 +9,10 @@ def validate_fields(data_field):
 	ciudad = False
 
 	if data_field:
-		if re.match('[0-9]', data_field[0]):
+		if str(data_field[0]).isdigit():
 			edad = True
 		else:
 			value = "el valor %s no es valido como edad" % (data_field[0])
-
 		if re.match('[a-zA-Z]', data_field[1]):
 			nombre = True
 		else:
@@ -37,7 +36,7 @@ def validate_pet(data_field):
 	owner = False
 
 	if data_field:
-		if re.match('[0-9]', data_field[0]):
+		if str(data_field[0]).isdigit():
 			edad = True
 		else:
 			value = "el valor %s no es valido como edad" % (data_field[0])
@@ -45,7 +44,7 @@ def validate_pet(data_field):
 			nombre = True
 		else:
 			value = "el valor %s no es valido como nombre" % (data_field[1])
-		if re.match('[0-9]', data_field[2]):
+		if str(data_field[2]).isdigit():
 			owner = True
 		else:
 			value = "el valor %s no es valido como id_owner" % (data_field[2])
